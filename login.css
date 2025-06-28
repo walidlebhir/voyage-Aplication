@@ -1,0 +1,386 @@
+/* on fait itage des lien pour type d'ecriture */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*style du page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+
+
+
+/*style d'une nav bar */
+/* Style global pour le body */
+body {
+    display: flex;
+    flex-direction: column;  /* Assure que la navbar est au-dessus du contenu */
+    align-items: center;
+    justify-content: center;
+    background-color: #1b1b1b;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Style pour la navbar */
+nav{
+    
+    background: #1b1b1b;
+    width: 100%;
+    padding: 0 10px;
+    z-index: 10;
+    
+
+}
+nav .menu{
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*style logo */
+.logo img{
+    width: 180px;
+    border-radius: 10px 10px;
+    
+}
+
+nav .menu .logo a {
+    
+    color: #fff;
+    font-size: 50px;
+    font-weight: 200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    font-style: none;
+
+
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+nav ul a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+    font-weight: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 12px;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+    border-radius: 15px ;
+
+}
+
+
+nav ul a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px ;
+    background-color:#29d9d5 ;
+    height: 4px;
+    width: 0%;
+    border-radius:4px;
+    transition: 0.5s;
+    
+}
+
+nav ul a:hover::after{
+    width: 90%;
+}
+
+nav ul button{
+    background-color: #1b1b1b;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding:  6px 20px 6px 20px;
+}
+nav ul button:hover{
+    background-color: #29d9d5;
+    color: #fff;
+    border: 1px solid #1b1b1b ;
+}
+
+
+/* Légère couleur grise au survol */
+
+/********************************************************************************************/
+
+
+.continair{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background:#fcfefe ;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    margin-top: 100px;
+}
+
+.continair .form{
+    padding: 30px;
+    
+}
+
+.continair .form .titre{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+    color: #000;
+    align-items: center;
+    padding: -30px;
+    padding-left:110px;
+}
+
+.form .titre::before{
+    content:'' ;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 25px;
+
+}
+
+.form .inputfild{
+    background-color:#333 ;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top:30px ;
+}
+
+.inputfild input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+
+
+}
+
+
+.inputfild input:is(:focus, :valid){
+    border-bottom-color: #333;
+
+}
+
+.inputfild i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: all 0.2s ease ;
+
+}
+
+.inputfild input:is(:focus, :valid) ~ i{
+    border-bottom-color: #333;
+}
+
+.inputfild i.icon{
+    left: 0;
+}
+
+.inputfild i.showh{
+    right: 0;
+}
+
+
+.form .chekbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:20px ;
+}
+
+.chekbox .content_chek{
+    display: flex;
+    align-items: center;
+}
+
+.content_chek input{
+    margin: 0 8px 0 4px;
+    accent-color: #4070f4;
+}
+
+.form  a.text{
+    color: #333;
+    text-decoration: none;
+}
+
+.form a:hover{
+    text-decoration: underline;
+}
+
+.form .button {
+    margin-top: 35px;
+
+
+}
+
+
+.inputfild.button {
+    text-align: center; /* Centrer le bouton à l'intérieur de son conteneur */
+    margin-top: 20px; /* Ajouter un peu d'espace au-dessus du bouton */
+}
+
+.inputfild.button button {
+    background-color: #000; /* Couleur de fond verte */
+    color: white; /* Texte en blanc */
+    border: none; /* Retirer la bordure */
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    text-align: center; /* Centrer le texte */
+    text-decoration: none; /* Enlever la décoration du texte (par exemple, souligné) */
+    display: inline-block; /* Le bouton se comporte comme un élément en ligne */
+    font-size: 16px; /* Taille du texte */
+    cursor: pointer; /* Changer le curseur pour indiquer que c'est cliquable */
+    border-radius: 5px; /* Bordures arrondies */
+    
+}
+
+/* Effet de survol pour le bouton */
+.inputfild.button button:hover {
+    background-color: #333; /* Changer la couleur de fond lorsque l'on survole */
+    transform: scale(1.05); /* Légère augmentation de la taille du bouton */
+}
+
+
+
+.login_signup {
+    color: #333;
+    margin: 16px 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login_signup p{
+    padding: 0px -50px;
+}
+.login_signup a{
+    text-decoration: none;
+    color: #333;
+}
+
+.login_signup a:hover{
+    text-decoration: underline;
+}
+
+
+/*foter   : style d'une foter ajouter dans page html */
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 50px 0;
+    font-size: 1em;
+    margin-top: 50px;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 50px;
+}
+
+.footer .footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 250px;
+}
+
+.footer h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin: 10px 0;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+    color: #29d9d5;
+}
+
+.footer .social-media {
+}
+
+.footer .social-media a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .social-media a:hover {
+    text-decoration: underline;
+    color: #f39c12;
+}
+
+.footer .newsletter input[type="email"] {
+    padding: 10px ;
+    
+    width: 80%;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer .newsletter button {
+    padding: 6px 15px;
+    background-color: #29d9d5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer .newsletter button:hover {
+    background-color: #1b1b1b;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footer-section {
+        text-align: center;
+    }
+}

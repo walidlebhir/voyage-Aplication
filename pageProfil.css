@@ -1,0 +1,486 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+nav{
+    background-color:  #000;
+    width: 80%;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 180px;
+    border-radius: 10px 10px;
+    
+}
+
+.user-pic{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+nav ul{
+    width: 100%;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+    font-size: 19px;
+    padding: 10px ;
+}
+
+
+/*efecte apres clique */
+
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px ;
+    background-color:#29d9d5 ;
+    height: 4px;
+    width: 0%;
+    border-radius:4px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+
+
+/*style du bar profil */
+
+.sub_menuwrap{
+    margin-top: 0;
+    position: absolute;
+    top: 13%;
+    right: 0%;
+    width: 270px;
+    box-shadow: 0 0 10px rgba(54, 53, 53, 0.3);
+    border-radius: 25px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub_menuwrap.open_menu{
+    max-height: 400px;
+}
+
+.sub_menu{
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+
+}
+
+.user_info{
+    display: flex;
+    align-items: center;
+}
+.user_info h3{
+    font-weight: 500;
+}
+.user_info img{
+    width: 60px;
+    border-radius:50%x ;
+    margin-right: 15px;
+}
+
+.sub_menu hr{
+    border: 0;
+    height: 1px;
+    width: 80%;
+    background-color: #ccc;
+    margin: 15px 0 10px ;
+}
+
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+
+.sub-menu-link p{
+    width: 60%;
+}
+
+.sub-menu-link img{
+    width: 20px;
+    background: #e5e5ee ;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right:15px ;
+}
+
+.sub-menu-link span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span{
+    transform: translate(5px);
+}
+
+.sub-menu-link:hover p{
+    font-weight: 600; /* pour efect*/
+}
+
+/*efacer margin entre deux div */
+
+
+/*dexieme nav bar */
+
+
+/*style de notre autre partie */
+
+.messageclient {
+    margin: 60px;
+    padding-bottom: 30px;
+    padding-left:140px ; /* Padding pour espacer les éléments */
+    text-align: left; /* Aligne le texte à gauche */
+}
+
+.messageclient .content {
+    border: 2px solid #ccc; /* Bordure autour du contenu (h3, p et button) */
+    padding: 20px; /* Padding à l'intérieur de la bordure */
+    display: inline-block;
+    border-radius: 12px; /* Le contenu prend la largeur nécessaire */
+}
+
+.messageclient .content h3{
+    padding: 10px;
+    color: #000000;
+    font-size: 18px;
+}
+
+.messageclient .content p{
+    color: #1a1a1a;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+
+.messageclient button {
+    padding: 6px 6px 6px 6px;
+    border-radius: 7px; 
+    color: #fff;
+    border-radius: none;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.messageclient button:hover{
+    background-color: #fff;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+
+
+
+
+/*la pertie image et text*/
+.oner{
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    height: 70vh;
+    margin-bottom: 100px;
+}
+
+.imgoner{
+    width: 45%;
+    height: 100%;
+    padding-left:60px ;
+
+}
+
+.imgoner img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 6px;
+    box-sizing: 0 32px 80px -32px rgba(0 , 0 ,0 ,.20);
+}
+
+.contentbox{
+    width: 45%;
+
+}
+.smailtitle{
+    text-transform:uppercase ;
+    font-size: 14px;
+    letter-spacing: 2px;
+    position: relative;
+    width: fit-content;
+}
+.smailtitle::before{
+    content: "";
+    position: absolute;
+    background-color: #f9ad4a;
+    left: -65px;
+    bottom: 10px;
+    width: 50px;
+    height: 2px;
+    border-radius: 6px;
+}
+
+.bigtitle{
+    margin: 20px;
+    font-size: 40px;
+    line-height: 40px;
+
+}
+
+.dark-btn{
+    background-color: #e67e22;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    padding: 10px 8px 8px 10px;
+}
+.contentbox button {
+    margin-top: 30px;
+}
+
+.dark-btn:hover{
+    
+    background-color: #333;
+    color: #fff;
+}
+.imgoner p{
+    margin-top: 2px;
+    font-weight: bold;
+
+}
+
+
+/*style pour la publication */
+
+.voyages-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 0px;
+}
+
+.voyage-card {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    transition: transform 0.2s ease;
+}
+
+.voyage-card:hover {
+    transform: translateY(-5px);
+}
+
+.voyage-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.voyage-card h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px;
+}
+
+.voyage-card .date {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin: 0 10px 10px;
+}
+
+.voyage-card p {
+    font-size: 0.9em;
+    color: #34495e;
+    margin: 0 10px 10px;
+}
+
+.voyage-card .price {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 0 10px 10px;
+}
+
+.voyage-card .button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.voyage-card .button:hover {
+    background-color: #333;
+}
+
+/* Responsive pour les petits écrans */
+@media (max-width: 768px) {
+    .voyages-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .voyages-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+/*style d'une foter*/
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 50px 0;
+    font-size: 1em;
+    margin-top: 50px;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 50px;
+}
+
+.footer .footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 250px;
+}
+
+.footer h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin: 10px 0;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+    color: #29d9d5;
+}
+
+.footer .social-media {
+}
+
+.footer .social-media a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .social-media a:hover {
+    text-decoration: underline;
+    color: #f39c12;
+}
+
+.footer .newsletter input[type="email"] {
+    padding: 10px ;
+    
+    width: 80%;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer .newsletter button {
+    padding: 6px 15px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer .newsletter button:hover {
+    background-color: #e67e22;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footer-section {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

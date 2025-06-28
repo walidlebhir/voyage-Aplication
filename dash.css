@@ -1,0 +1,164 @@
+
+
+/*style des partie admin premiere page  */
+
+.titile{
+    font-size: 28px;
+    position: relative;
+    bottom: 24px;
+    font-weight: 10px;
+    color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.secp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.pageadmin{
+    width: 200px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display:  flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pageadmin .componentP p{
+    font-size: 22px;
+    color: #000;
+    margin-left: 20px;
+    font-weight: 3px;
+    
+}
+
+.pageadmin .icon i{
+    font-size: 22px;
+    margin-right: 20px;
+    color: #333;
+}
+
+.pageadmin .componentP .p0{
+    color: #8B4513;
+}
+
+.pageadmin .componentP .p1{
+    color: #026765;
+}
+
+.pageadmin .componentP .p2{
+    color:#3e3ecb ;
+}
+
+.pageadmin .componentP .p3{
+    color: #e74b03;
+}
+
+.pageadmin .componentP p:hover{
+    text-decoration: underline;
+}
+
+/*style des partie section qui contient des information sur emploiant */
+
+.adminfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Titre du formulaire */
+.form-container h2 {
+    text-align: center;
+    color: #000;
+}
+
+/* Groupes de champs de formulaire */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Labels des champs */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Champs de saisie */
+.form-group  input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Style du bouton de soumission */
+button.submit-btn {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button.submit-btn:hover {
+    background-color: #333;
+}
+
+button.submit-btn:active {
+    transform: scale(0.98);
+}
+
+.publication {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 450px;
+    
+}
+
+.comp{
+    margin: 16px 0;
+    display: flex;
+    align-items: center ; 
+    justify-content: space-between;
+}
+
+.comp i{
+    font-size: 22px;
+    margin-left: 20px;
+    color: #007BFF;
+
+}
+
+.comp h3{
+    color: #333;
+    margin-right: 128px;
+    font-size: 19px;
+}
+
+.publication h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
